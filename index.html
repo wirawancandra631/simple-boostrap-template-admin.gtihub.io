@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-heading  position-relative">
+            <p>E-DASHBOARD</p>
+            <div class="position-absolute top-0  end-0 d-md-none d-sm-block p-3">
+                <button type="button" id="btn-close-sidebar"
+                class="btn btn-danger btn-sm rounded-circle  "><i class="bi bi-x-circle"></i></button>
+            </div>
+          
+        </div>
+        <div class="sidebar-navigation ">
+            <div class="sidebar-navigation-item">
+                <ul >
+                    <li class="mb-3"><a href=""><i class="bi bi-house"></i><span>Dashboard</span></a></li>
+                    <li class="mb-3">
+                        <a href="#report-collapse" data-bs-toggle="collapse" data-bs-toggle="dropdown">
+                            <i class="bi bi-database"></i>
+                            <span>Report data</span>
+                            <i class="bi bi-chevron-down sidebar-navigation-dropdown"></i>
+                        </a>
+                        <ul class="sidebar-item-collapse collapse" id="report-collapse">
+                            <li><a href="pages/report-permonth.html">Data per/month</a></li>
+                            <li><a href="pages/report-peryear.html">Data per/year</a></li>
+
+                        </ul>
+
+
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-navigation-item">
+                <ul>
+                    <li class="sidebar-navigation-item-title mb-3">Master data</li>
+                    <li class="mb-3"><a href="/pages/data-product.html"><i class="bi bi-box-fill"></i><span>Data Product</span></a></li>
+                    <li class="mb-3"><a href="/pages/data-promo.html"><i class="bi bi-tag"></i><span>Data Promo</span></a></li>
+                    <li class="mb-3"><a href="/pages/page-not-created.html"><i class="bi bi-tag"></i><span>Data Sales</span></a></li>
+                    <li class="mb-3"><a href="pages/page-not-created.html"><i class="bi bi-table"></i><span>Data Order</span></a></li>
+                </ul>
+            </div>
+            <div class="sidebar-navigation-item">
+                <ul>
+                    <li class="sidebar-navigation-item-title mb-3">User data</li>
+                    <li class="mb-3"><a href="pages/page-not-created.html"><i class="bi bi-at"></i><span>User seller</span></a></li>
+                    <li class="mb-3"><a href="pages/page-not-created.html"><i class="bi bi-tag"></i><span>User promo</span></a></li>
+                    <li class="mb-3"><a href="pages//page-not-created.html"><i class="bi bi-ban"></i><span>User banned</span></a></li>
+                </ul>
+            </div>
+            <div class="sidebar-navigation-item">
+                <ul>
+                    <li class="sidebar-navigation-item-title mb-3">Dashboard setting</li>
+                    <li class="mb-3"><a href="pages/page-not-created.html"><i class="bi bi-gear"></i><span>Page setting</span></a></li>
+
+
+                </ul>
+            </div>
+
+
+        </div>
+    </aside>
+    <main class="main-dashboard">
+        <nav class="navbar w-100 p-3 bg-light d-flex  align-items-center shadow">
+            <button type="button" id="btn-open-sidebar" class="btn d-sm-block d-md-none "><i
+                    class="bi bi-list"></i></button>
+            <ul class="nav ms-auto">
+                <li class="position-relative me-3">
+                    <a href="#" class="text-dark fs-4" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"><i class="bi bi-people"></i></a>
+                    <ul class="dropdown-menu  ">
+                        <li><a class="dropdown-item" href="#">Profil</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+                <li class="me-3 position-relative"><a href="" class="text-dark fs-4"><i class="bi bi-bell"></i></a><span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        9+
+                        <span class="visually-hidden">unread messages</span>
+                    </span></li>
+
+            </ul>
+        </nav>
+        <div class="container-fluid p-3">
+            <h1>Dashboard Data</h1>
+            <div class="row mt-3">
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <div class="card-title p-3 bg-success text-white">
+                            <p>ORDER ACTIVE</p>
+                        </div>
+                        <div class="card-body bg-light">
+                            <h3>200</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <div class="card-title p-3 bg-warning text-white">
+                            <p>TARGET SELLER</p>
+                        </div>
+                        <div class="card-body bg-light">
+                            <h3>100</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <div class="card">
+                        <div class="card-title p-3 bg-primary text-white">
+                            <p>NEW PRODUCT</p>
+                        </div>
+                        <div class="card-body bg-light">
+                            <h3>50</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="w-100-d-flex my-3">
+                                <form action="" class="d-flex">
+                                    <input type="search" name="" id="" class="form-control form-sm me-2"
+                                        placeholder="Search product">
+                                    <button type="submit" class="btn btn-primary btn-sm">Search</button>
+                                </form>
+                            </div>
+                            <table class="table table-bordered text-center">
+                                <thead>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>Name Product</th>
+                                        <th>Price Product</th>
+                                        <th>Supplier</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Apple Macbook Air</td>
+                                        <td>$20</td>
+                                        <td>Apple</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Iphone 13 pro</td>
+                                        <td>$20</td>
+
+                                        <td>Apple</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Micrsofot surface pro</td>
+                                        <td>$20</td>
+
+                                        <td>Microsoft</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Galaxy z-fold</td>
+                                        <td>$20</td>
+
+                                        <td>Samsung</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Galaxy s20</td>
+                                        <td>$20</td>
+
+                                        <td>Samsung</td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
