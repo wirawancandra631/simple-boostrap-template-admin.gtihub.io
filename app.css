@@ -1,47 +1,41 @@
 .sidebar {
     width: 100%;
-    
-    
     height: 100vh;
     position: fixed;
-    background-color: #e8e3ef;
-    z-index: 1;
-    display: none;
+    z-index: 99;
     overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    background-color: black;
+    color: white;
 }
 .sidebar-heading {
     width: 100%;
-    padding: 20px;
+    padding: 10px;
 
 }
 
 .sidebar-heading p {
-    color: rgb(29, 27, 27);
+    color: rgb(233, 227, 227);
     font-weight: bold;
     text-align: center;
     font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.sidebar-navigation {
-    padding:  15px;
-}
+
 
 .sidebar-navigation ul {
     list-style-type: none;
+    list-style-position: inside;
 }
-
-
-
-
 .sidebar-navigation ul li a {
     text-decoration: none;
-    color: rgb(24, 22, 22);
+    color: rgb(227, 223, 223);
     font-weight: 300;
-    font-size: 1.1em;
+    font-size: 0.9em;
     padding: 10px;
-    width: 100%;
     display: flex;
-
     align-items: center;
 
 }
@@ -53,41 +47,38 @@
     border-radius: 10px;
 }
 
+.sidebar-navigation ul li i {
+    margin-right: 15px;
+}
 .sidebar-navigation-dropdown {
     margin-left: auto;
 }
 
-.sidebar-navigation ul li i {
-    margin-right: 20px;
-}
 
 .sidebar-item-collapse {
     margin-top: 5px;
+    margin-right: 4px;
     border-radius: 10px;
+    background-color: rgb(34, 32, 32);
+    padding: 5px;
+    margin-left: 20px;
 }
 .sidebar-item-collapse li {
-    margin: 0 0 0 0;
-    padding: 10px;
-    background-color: white;
-    font-size: 1em;
+    font-size: 0.8em;
 }
-.sidebar-item-collapse li a{
-    font-size: 10px;
-    
-}
+
 .main-dashboard {
     width: 100%;
+    transition: margin 0.6s ease;
     
 }
+
 
 @media screen and (min-width:768px){
     .sidebar {
         width: 30%;
-        height: 100vh;
-        position: fixed;
-        background-color: #e8e3ef;
-        display: block;
-        z-index: 1;
+        transform: translateX(0);
+
     }
     .main-dashboard {
         width: 70%;
@@ -98,15 +89,12 @@
 @media screen and (min-width:992px){
     .sidebar {
         width: 20%;
-        height: 100vh;
-        position: fixed;
-        background-color: #e8e3ef;
-        display: block;
-        z-index: 1;
+        transform: translateX(0);
     }
     .main-dashboard {
         width: 80%;
         margin-left: 20%;
     }
 }
+
 
